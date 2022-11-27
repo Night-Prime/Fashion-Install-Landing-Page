@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Dhaniel Mall</title>
+    <meta name="description" content="">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="left"></div>
+        <div class="right"></div>
+
+        <div class="strips">
+            <div class="left-strip"></div>
+            <div class="right-strip"></div>
+        </div>
+
+        <!-- Navbar Section -->
+        <div class="nav">
+            <div class="logo">Dhaniel's <span class="reg"></span></div>
+
+            <div class="menu"><i class="fa fa-bars"></i></div>
+
+            <div class="categories">
+                <ul>
+                    <li>Men</li>
+                    <li>Women</li>
+                    <li>Kids</li>
+                </ul>
+            </div>
+
+            <div class="search"><i class="fa fa-search"></i></div>
+
+            <div class="bag"><i class="fa fa-shopping-bag"></i></div>
+
+            <div class="media">
+                <ul>
+                    <li>Faccebook</li>
+                    <li>Instagram</li>
+                    <li>Twitter</li>
+                </ul>
+            </div>
+
+            <div class="size">
+                <ul>
+                    <span>Size</span>
+                    <li>XS</li>
+                    <li>S</li>
+                    <li>M</li>
+                    <li>L</li>
+                    <li>XL</li>
+                </ul>
+            </div>
+        </div>
+
+        <img src="./assets/gucci.png" alt="" class="product-img">
+
+        <div class="product-text">
+            <h1 class="product-title"> Fashion Install </h1>
+            <p class="product-subtitle">Leather Jacket..</p>
+        </div>
+
+        <div class="dots">
+            <div class="dot"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+        </div>
+
+
+        <div class="bottomnav">
+            <div class="bottomnav-img"></div>
+
+            <ul>
+                <li class="fa fa-chevron-left"></li>
+                <li class="fa fa-chevron-right"></li>
+            </ul>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js"
+        integrity="sha512-gmwBmiTVER57N3jYS3LinA9eb8aHrJua5iQD7yqYCKa5x6Jjc7VDVaEA0je0Lu0bP9j7tEjV3+1qUm6loO99Kw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+        </script>
+    <script>
+        let tween = gsap.timeline({ delay: .5 });
+
+        tween.from(".product-img", {
+            opacity: 0,
+            duration: 1,
+            ease: 'power2. in'
+        });
+
+        tween.fromTo(".right", {
+            duration: 0,
+            ease: 'power2.out',
+            x: 30000
+        }, {
+            duration: .5,
+            ease: 'power2. out',
+            x:0
+        });
+
+        tween.fromTo(".left", {
+            duration: 0,
+            ease: 'power2.in',
+            x: 30000
+        }, {
+            duration: 1,
+            ease: 'power2. in',
+            x:0
+        });
+
+        tween.from(".product-title", {
+            opacity: 0,
+            duration: 1,
+            ease: 'power2. in'
+        });
+
+        tween.from(".product-subtitle", {
+            opacity: 0,
+            duration: 1,
+            ease: 'power2. in'
+        });
+
+        tween.from(".logo", {
+            opacity: 0,
+            duration: 1,
+            ease: 'power2. in'
+        });
+
+        tween.from(".categories, .menu, .search, .size", {
+            opacity: 0,
+            duration: 1,
+            ease: 'power2. in'
+        });
+
+        tween.from(".media", {
+            opacity: 0,
+            duration: 1,
+            ease: 'power2. in'
+        });
+
+        tween.from(".bag", {
+            opacity: 0,
+            duration: 1,
+            ease: 'power2. in'
+        });
+
+        tween.from(".dots", {
+            opacity: 0,
+            duration: 1,
+            ease: 'power2. in'
+        });
+
+        tween.from(".bottomnav", {
+            opacity: 0,
+            duration: 1,
+            ease: 'power2. in'
+        });
+
+
+    </script>
+</body>
+
+</html>
