@@ -107,6 +107,13 @@ body {
   width: 20px;
   text-align: center;
   margin-top: 18px;
+  cursor: pointer;
+}
+
+.search:hover,
+.bag:hover {
+  color: #fff;
+  background-color: #0b2c11;
 }
 
 .search {
@@ -135,6 +142,7 @@ body {
 .categories ul li {
   display: inline-block;
   padding: 5px 20px;
+  cursor: pointer;
 }
 
 .media {
@@ -151,6 +159,7 @@ body {
 .media ul li {
   display: inline-block;
   font-weight: 500;
+  cursor: pointer;
 }
 
 .media ul li:not(:last-child) {
@@ -226,6 +235,7 @@ img {
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
+  cursor: pointer;
 }
 
 .product-title {
